@@ -199,7 +199,7 @@ def init_parameters_SAC(selection:str):
         "use_sde" : True,##
         "verbose" : 0}
     ###################################################################
-    kwargs_best = {"policy": "MlpPolicy", #bajando tau, sin sde
+    kwargs_best = {"policy": "MlpPolicy", #mejor configuración
         "learning_rate":0.0005,
         "buffer_size":1000000,
         "learning_starts":100,

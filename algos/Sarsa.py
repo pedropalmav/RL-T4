@@ -2,7 +2,7 @@ import random
 
 import numpy as np
 
-from FeatureExtractor import FeatureExtractor
+from SarsaFeatureExtractor import FeatureExtractor
 
 
 class Sarsa:
@@ -12,7 +12,7 @@ class Sarsa:
         self.__epsilon = epsilon
         self.__alpha = alpha
         self.__gamma = gamma
-        self.__feature_extractor = FeatureExtractor() #edited num actions
+        self.__feature_extractor = FeatureExtractor(self.__num_actions) 
         self.__num_features = self.__feature_extractor.num_of_features
         self.__weights = np.zeros(self.__num_features)
 
